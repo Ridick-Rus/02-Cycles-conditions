@@ -15,7 +15,7 @@ from pathlib import Path
 import json
 
 print(Path.cwd())
-with open("notebook/dz2/files/pilot_path.json") as f:
+with open("files/pilot_path.json") as f:
   json_data = json.load(f)
 print(json_data)
 print()
@@ -74,7 +74,7 @@ for key in json_data:
 
 # вывод результата (допишите код)
 for drone in drone_models:
-    print(f'Дрон {drone} отлетал {drone_dict[drone]} миссий')
+    print(f'Дрон {drone} отлетал {drone_models_list.count(drone)} миссий')
 
 
 class Aircraft:
